@@ -1,5 +1,7 @@
-JFR(Java Flight Recorder) with RSocket
+JFR Event Streaming with RSocket
 ======================================
+
+JEP 349: JFR Event Streaming https://openjdk.java.net/jeps/349
 
 # Why JRF with RSocket?
 
@@ -13,4 +15,5 @@ JFR(Java Flight Recorder) with RSocket
 * Digging Into Sockets With Java Flight Recorder: https://dzone.com/articles/analyzing-tcp-socket-with-java-flight-recorder
 * Monitoring REST APIs with Custom JDK Flight Recorder Events: https://www.morling.dev/blog/rest-api-monitoring-with-custom-jdk-flight-recorder-events/
 * Continuous Monitoring with JDK Flight Recorder (JFR): https://www.infoq.com/presentations/monitoring-jdk-jfr/
+* jdk.jfr: https://docs.oracle.com/en/java/javase/13/docs/api/jdk.jfr/jdk/jfr/package-summary.html
 
