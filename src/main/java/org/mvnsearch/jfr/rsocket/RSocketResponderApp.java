@@ -1,8 +1,8 @@
 package org.mvnsearch.jfr.rsocket;
 
-import io.rsocket.RSocketFactory;
+import io.rsocket.core.RSocketServer;
 import io.rsocket.transport.netty.server.CloseableChannel;
-import io.rsocket.uri.UriTransportRegistry;
+import io.rsocket.transport.netty.server.TcpServerTransport;
 
 /**
  * RSocket Responder App
@@ -12,10 +12,9 @@ import io.rsocket.uri.UriTransportRegistry;
 public class RSocketResponderApp {
     public static void main(String[] args) throws Exception {
         JFRResponderFactory responderFactory = new JFRResponderFactory();
-        CloseableChannel closeableChannel = (CloseableChannel) RSocketFactory.receive()
+        CloseableChannel closeableChannel = RSocketServer.create()
                 .acceptor(responderFactory.responder())
-                .transport(UriTransportRegistry.serverForUri("tcp://0.0.0.0:42252"))
-                .start()
+                .bind(TcpServerTransport.create("0.0.0.0", 42252))
                 .block();
         System.out.println("RSocket JFR is listening on 42252!");
         closeableChannel.onClose().block();
