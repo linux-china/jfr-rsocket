@@ -45,7 +45,6 @@ public class JFREventStreamingResponder extends AbstractRSocket {
 
     @Override
     public Flux<Payload> requestStream(Payload payload) {
-
         return Flux.create(sink -> {
             String jfrSetting = payload.getDataUtf8();
             var rs = new RecordingStream();
