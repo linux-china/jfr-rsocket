@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 import java.time.Duration;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * JFR test
@@ -17,21 +18,11 @@ public class JFRTest {
 
     @Test
     public void testPrintNames() throws Exception {
-        FlightRecorder flightRecorder = FlightRecorder.getFlightRecorder();
-        flightRecorder.getEventTypes().forEach(eventType -> {
-            System.out.println(eventType.getName());
+        AtomicInteger counter = new AtomicInteger();
+        FlightRecorder.getFlightRecorder().getEventTypes().forEach(eventType -> {
+            counter.incrementAndGet();
         });
-    }
-
-    @Test
-    public void testDemo() {
-        MyJFREvent event = new MyJFREvent();
-        event.setMessage("Hello");
-        event.setValue(1);
-        event.begin();
-        System.out.println("goood");
-        event.commit();
-        System.out.println(event);
+        System.out.println(counter.intValue());
     }
 
     @Test
