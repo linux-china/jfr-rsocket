@@ -1,0 +1,160 @@
+Total: 157 on JDK 15
+
+jdk.ProcessStart:Operating system process started
+jdk.X509Validation:Serial numbers from X.509 Certificates forming chain of trust
+jdk.X509Certificate:Details of X.509 Certificate parsed by JDK
+jdk.TLSHandshake:Parameters used in TLS Handshake
+jdk.SecurityPropertyModification:Modification of Security property
+jdk.ActiveRecording
+jdk.ActiveSetting
+jdk.JavaErrorThrow:An object derived from java.lang.Error has been created. OutOfMemoryErrors are ignored
+jdk.ExceptionStatistics:Number of objects derived from java.lang.Throwable that have been created
+jdk.JavaExceptionThrow:An object derived from java.lang.Exception has been created
+jdk.SocketWrite:Writing data to a socket
+jdk.SocketRead:Reading data from a socket
+jdk.FileWrite:Writing data to a file
+jdk.FileRead:Reading data from a file
+jdk.FileForce:Force updates to be written to file
+jdk.DirectBufferStatistics:Statistics of direct buffer
+jdk.ThreadStart
+jdk.ThreadEnd
+jdk.ThreadSleep
+jdk.ThreadPark
+jdk.JavaMonitorEnter
+jdk.JavaMonitorWait:Waiting on a Java monitor
+jdk.JavaMonitorInflate
+jdk.BiasedLockRevocation:Revoked bias of object
+jdk.BiasedLockSelfRevocation:Revoked bias of object biased towards own thread
+jdk.BiasedLockClassRevocation:Revoked biases for all instances of a class
+jdk.ReservedStackActivation:Activation of Reserved Stack Area caused by stack overflow with ReservedStackAccess annotated method in call stack
+jdk.ClassLoad
+jdk.ClassDefine
+jdk.ClassRedefinition
+jdk.RedefineClasses
+jdk.RetransformClasses
+jdk.ClassUnload
+jdk.IntFlagChanged
+jdk.UnsignedIntFlagChanged
+jdk.LongFlagChanged
+jdk.UnsignedLongFlagChanged
+jdk.DoubleFlagChanged
+jdk.BooleanFlagChanged
+jdk.StringFlagChanged
+jdk.GCHeapSummary
+jdk.MetaspaceSummary
+jdk.MetaspaceGCThreshold
+jdk.MetaspaceAllocationFailure
+jdk.MetaspaceOOM
+jdk.MetaspaceChunkFreeListSummary
+jdk.PSHeapSummary
+jdk.G1HeapSummary
+jdk.GarbageCollection:Garbage collection performed by the JVM
+jdk.ParallelOldGarbageCollection:Extra information specific to Parallel Old Garbage Collections
+jdk.YoungGarbageCollection:Extra information specific to Young Garbage Collections
+jdk.OldGarbageCollection:Extra information specific to Old Garbage Collections
+jdk.G1GarbageCollection:Extra information specific to G1 Garbage Collections
+jdk.G1MMU
+jdk.EvacuationInformation
+jdk.GCReferenceStatistics:Total count of processed references during GC
+jdk.ObjectCountAfterGC
+jdk.G1EvacuationYoungStatistics:Memory related evacuation statistics during GC for the young generation
+jdk.G1EvacuationOldStatistics:Memory related evacuation statistics during GC for the old generation
+jdk.G1BasicIHOP:Basic statistics related to current IHOP calculation
+jdk.G1AdaptiveIHOP:Statistics related to current adaptive IHOP calculation
+jdk.PromoteObjectInNewPLAB:Object survived scavenge and was copied to a new Promotion Local Allocation Buffer (PLAB). Supported GCs are Parallel Scavange, G1 and CMS with Parallel New. Due to promotion being done in parallel an object might be reported multiple times as the GC threads race to copy all objects.
+jdk.PromoteObjectOutsidePLAB:Object survived scavenge and was copied directly to the heap. Supported GCs are Parallel Scavange, G1 and CMS with Parallel New. Due to promotion being done in parallel an object might be reported multiple times as the GC threads race to copy all objects.
+jdk.PromotionFailed:Promotion of an object failed
+jdk.EvacuationFailed:Evacuation of an object failed
+jdk.ConcurrentModeFailure:Concurrent Mode failed
+jdk.GCPhasePause
+jdk.GCPhasePauseLevel1
+jdk.GCPhasePauseLevel2
+jdk.GCPhasePauseLevel3
+jdk.GCPhasePauseLevel4
+jdk.GCPhaseConcurrent
+jdk.GCPhaseConcurrentLevel1
+jdk.GCPhaseParallel:GC phases for parallel workers
+jdk.AllocationRequiringGC
+jdk.TenuringDistribution
+jdk.G1HeapRegionTypeChange:Information about a G1 heap region type change
+jdk.Compilation
+jdk.CompilerPhase
+jdk.CompilationFailure
+jdk.CompilerInlining
+jdk.SweepCodeCache
+jdk.CodeCacheFull
+jdk.Deoptimization
+jdk.SafepointBegin:Safepointing begin
+jdk.SafepointStateSynchronization:Synchronize run state of threads
+jdk.SafepointCleanup:Safepointing begin running cleanup tasks
+jdk.SafepointCleanupTask:Safepointing begin running cleanup tasks
+jdk.SafepointEnd:Safepointing end
+jdk.ExecuteVMOperation:Execution of a VM Operation
+jdk.Shutdown:JVM shutting down
+jdk.ObjectAllocationInNewTLAB:Allocation in new Thread Local Allocation Buffer
+jdk.ObjectAllocationOutsideTLAB:Allocation outside Thread Local Allocation Buffers
+jdk.OldObjectSample:A potential memory leak
+jdk.DumpReason:Who requested the recording and why
+jdk.DataLoss:Data could not be copied out from a buffer, typically because of contention
+jdk.JVMInformation:Description of JVM and the Java application
+jdk.OSInformation
+jdk.VirtualizationInformation
+jdk.InitialSystemProperty:System Property at JVM start
+jdk.InitialEnvironmentVariable
+jdk.SystemProcess
+jdk.CPUInformation
+jdk.CPUTimeStampCounter
+jdk.CPULoad:OS CPU Load
+jdk.ThreadCPULoad
+jdk.ThreadContextSwitchRate
+jdk.NetworkUtilization
+jdk.JavaThreadStatistics
+jdk.ClassLoadingStatistics
+jdk.ClassLoaderStatistics
+jdk.SymbolTableStatistics
+jdk.StringTableStatistics
+jdk.PlaceholderTableStatistics
+jdk.LoaderConstraintsTableStatistics
+jdk.ProtectionDomainCacheTableStatistics
+jdk.ThreadAllocationStatistics
+jdk.PhysicalMemory:OS Physical Memory
+jdk.ExecutionSample:Snapshot of a threads state
+jdk.NativeMethodSample:Snapshot of a threads state when in native
+jdk.ThreadDump
+jdk.NativeLibrary
+jdk.ModuleRequire:A directed edge representing a dependency
+jdk.ModuleExport
+jdk.CompilerStatistics
+jdk.CompilerConfiguration
+jdk.CodeCacheStatistics
+jdk.CodeCacheConfiguration
+jdk.CodeSweeperStatistics
+jdk.CodeSweeperConfiguration
+jdk.IntFlag
+jdk.UnsignedIntFlag
+jdk.LongFlag
+jdk.UnsignedLongFlag
+jdk.DoubleFlag
+jdk.BooleanFlag
+jdk.StringFlag
+jdk.ObjectCount
+jdk.G1HeapRegionInformation:Information about a specific heap region in the G1 GC
+jdk.GCConfiguration:The configuration of the garbage collector
+jdk.GCSurvivorConfiguration:The configuration of the survivors of garbage collection
+jdk.GCTLABConfiguration:The configuration of the Thread Local Allocation Buffers (TLABs)
+jdk.GCHeapConfiguration:The configuration of the garbage collected heap
+jdk.YoungGenerationConfiguration:The configuration of the young generation of the garbage collected heap
+jdk.ZAllocationStall:Time spent waiting for memory to become available
+jdk.ZPageAllocation:Allocation of a ZPage
+jdk.ZRelocationSet
+jdk.ZRelocationSetGroup
+jdk.ZStatisticsCounter
+jdk.ZStatisticsSampler
+jdk.ZThreadPhase
+jdk.ZUncommit:Uncommitting of memory
+jdk.ZUnmap:Unmapping of memory
+jdk.ShenandoahHeapRegionStateChange:Information about a Shenandoah heap region state change
+jdk.ShenandoahHeapRegionInformation:Information about a specific heap region in the Shenandoah GC
+jdk.Flush
+jdk.HeapDump
+
