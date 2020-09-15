@@ -10,7 +10,7 @@ JEP 349: JFR Event Streaming https://openjdk.java.net/jeps/349
 
 # References
 
-* Java Flight Recorder﻿with IntelliJ IDEA: https://www.jetbrains.com/help/idea/java-flight-recorder.html
+* Java Flight Recorder with IntelliJ IDEA: https://www.jetbrains.com/help/idea/java-flight-recorder.html
 * Getting started with JFR: https://learning.oreilly.com/library/view/java-11-and/9781789133271/e94a5985-ab79-4fb8-a530-705ca6b5126e.xhtml
 * Java Flight Recorder: https://docs.oracle.com/javacomponents/jmc-5-4/jfr-runtime-guide/about.htm
 * Digging Into Sockets With Java Flight Recorder: https://dzone.com/articles/analyzing-tcp-socket-with-java-flight-recorder
@@ -18,4 +18,5 @@ JEP 349: JFR Event Streaming https://openjdk.java.net/jeps/349
 * Continuous Monitoring with JDK Flight Recorder (JFR): https://www.infoq.com/presentations/monitoring-jdk-jfr/
 * jdk.jfr: https://docs.oracle.com/en/java/javase/13/docs/api/jdk.jfr/jdk/jfr/package-summary.html
 * Flight Recorder API Programmer’s Guide: https://docs.oracle.com/en/java/javase/14/jfapi/preface.html
+* Flight Recorder demo: https://github.com/flight-recorder
 
