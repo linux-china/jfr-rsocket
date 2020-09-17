@@ -3,6 +3,15 @@ JFR Event Streaming with RSocket
 
 JEP 349: JFR Event Streaming https://openjdk.java.net/jeps/349
 
+# Anatomy of JFR Event
+
+* Event ID
+* Timestamp(CPU ticks)
+* Duration(CPU ticks)
+* Thread ID: most events have, not every event
+* StackTrace ID
+* Event Specific Payload
+
 # Why JRF with RSocket?
 
 * Both are streaming
