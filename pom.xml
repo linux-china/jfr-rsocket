@@ -12,7 +12,8 @@
         <java.version>15</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <netty.version>4.1.52.Final</netty.version>
-        <rsocket.version>1.0.2</rsocket.version>
+        <reactor-bom.version>2020.0.0-RC1</reactor-bom.version>
+        <rsocket.version>1.1.0-M2</rsocket.version>
         <logback.version>1.2.3</logback.version>
     </properties>
 
@@ -72,6 +73,13 @@
                 <type>pom</type>
             </dependency>
             <dependency>
+                <groupId>io.projectreactor</groupId>
+                <artifactId>reactor-bom</artifactId>
+                <version>${reactor-bom.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
                 <groupId>io.rsocket</groupId>
                 <artifactId>rsocket-bom</artifactId>
                 <version>${rsocket.version}</version>
@@ -87,15 +95,23 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
+                    <source>15</source>
+                    <target>15</target>
                     <parameters>true</parameters>
-                    <compilerArgs>
-                        <arg>--add-exports</arg>
-                        <arg>jdk.jfr/jdk.jfr.internal.tool=ALL-UNNAMED</arg>
-                    </compilerArgs>
+                    <!--  <compilerArgs>&#45;&#45;enable-preview</compilerArgs>-->
                 </configuration>
             </plugin>
         </plugins>
     </build>
+
+    <repositories>
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/libs-milestone</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 </project>
