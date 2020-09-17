@@ -7,6 +7,7 @@ import io.rsocket.util.DefaultPayload;
 import jdk.jfr.consumer.RecordingStream;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
+import reactor.core.publisher.Sinks;
 
 import java.time.Duration;
 import java.time.Instant;
@@ -22,16 +23,22 @@ public class JFREventStreamingResponder implements RSocket {
     private String id;
     private RSocket requester;
     private Mono<Void> comboOnClose;
+    private Sinks.One<Void> onClose = Sinks.one();
 
     public JFREventStreamingResponder(ConnectionSetupPayload setupPayload, RSocket requester) {
         this.id = UUID.randomUUID().toString();
         this.requester = requester;
-        this.comboOnClose = requester.onClose();
+        this.comboOnClose = Mono.first(onClose.asMono(), requester.onClose());
     }
 
     @Override
     public Mono<Void> onClose() {
         return this.comboOnClose;
+    }
+
+    public void dispose() {
+        this.onClose.tryEmitEmpty();
+        this.requester.dispose();
     }
 
     public String getId() {
