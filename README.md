@@ -19,4 +19,5 @@ JEP 349: JFR Event Streaming https://openjdk.java.net/jeps/349
 * jdk.jfr: https://docs.oracle.com/en/java/javase/13/docs/api/jdk.jfr/jdk/jfr/package-summary.html
 * Flight Recorder API Programmer’s Guide: https://docs.oracle.com/en/java/javase/14/jfapi/preface.html
 * Flight Recorder demo: https://github.com/flight-recorder
+* Continuous Monitoring with JDK Flight Recorder: https://www.youtube.com/watch?v=plYESjZ12hM
 
