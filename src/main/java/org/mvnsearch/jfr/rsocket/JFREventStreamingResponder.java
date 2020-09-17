@@ -1,6 +1,5 @@
 package org.mvnsearch.jfr.rsocket;
 
-import io.rsocket.AbstractRSocket;
 import io.rsocket.ConnectionSetupPayload;
 import io.rsocket.Payload;
 import io.rsocket.RSocket;
@@ -19,7 +18,7 @@ import java.util.UUID;
  *
  * @author linux_china
  */
-public class JFREventStreamingResponder extends AbstractRSocket {
+public class JFREventStreamingResponder implements RSocket {
     private String id;
     private RSocket requester;
     private Mono<Void> comboOnClose;
@@ -27,7 +26,7 @@ public class JFREventStreamingResponder extends AbstractRSocket {
     public JFREventStreamingResponder(ConnectionSetupPayload setupPayload, RSocket requester) {
         this.id = UUID.randomUUID().toString();
         this.requester = requester;
-        this.comboOnClose = Mono.first(super.onClose(), requester.onClose());
+        this.comboOnClose = requester.onClose();
     }
 
     @Override
