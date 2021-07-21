@@ -13,7 +13,7 @@ JEP 349: JFR Event Streaming https://openjdk.java.net/jeps/349
 * StackTrace ID
 * Event Specific Payload
 
-# Why JRF with RSocket?
+# Why JFR with RSocket?
 
 * Both are streaming
 * Both are message & event driven
@@ -30,4 +30,5 @@ JEP 349: JFR Event Streaming https://openjdk.java.net/jeps/349
 * Flight Recorder API Programmer’s Guide: https://docs.oracle.com/en/java/javase/14/jfapi/
 * Flight Recorder demo: https://github.com/flight-recorder
 * Continuous Monitoring with JDK Flight Recorder: https://www.youtube.com/watch?v=plYESjZ12hM
+* VisualVM: https://visualvm.github.io/
 
