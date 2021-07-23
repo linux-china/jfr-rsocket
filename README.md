@@ -31,4 +31,5 @@ JEP 349: JFR Event Streaming https://openjdk.java.net/jeps/349
 * Flight Recorder demo: https://github.com/flight-recorder
 * Continuous Monitoring with JDK Flight Recorder: https://www.youtube.com/watch?v=plYESjZ12hM
 * VisualVM: https://visualvm.github.io/
+* JDK Flight Recorder support for GraalVM Native Image: https://developers.redhat.com/articles/2021/07/23/jdk-flight-recorder-support-graalvm-native-image-journey-so-far#learn_more_about_jdk_flight_recorder
 
