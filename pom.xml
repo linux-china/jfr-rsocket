@@ -56,6 +56,12 @@
             <version>3.21.0</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.moditect.jfrunit</groupId>
+            <artifactId>jfrunit</artifactId>
+            <version>1.0.0.Alpha1</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
@@ -102,5 +108,5 @@
             </plugin>
         </plugins>
     </build>
-    
+
 </project>
