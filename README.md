@@ -37,4 +37,5 @@ Subscribe JFR Event by RSocket.
 * JDK Flight Recorder support for GraalVM Native Image: https://developers.redhat.com/articles/2021/07/23/jdk-flight-recorder-support-graalvm-native-image-journey-so-far#learn_more_about_jdk_flight_recorder
 * Remote Recording stream: https://egahlin.github.io/2021/05/17/remote-recording-stream.html
 * JfrUnit: extension for asserting JDK Flight Recorder events https://github.com/moditect/jfrunit
+* The JDK Flight Recorder File Format: https://www.morling.dev/blog/jdk-flight-recorder-file-format/
 
