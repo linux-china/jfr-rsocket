@@ -1,0 +1,6 @@
+### rsocket jfr
+STREAM jfr
+Host: localhost:42252
+Content-Type: text/plain
+
+jdk.CPULoad
