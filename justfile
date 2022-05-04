@@ -1,2 +1,2 @@
 cpuload:
-   rsocket-cli --stream -i "jdk.CPULoad" tcp://localhost:42252
+   rsc -stream -d "jdk.CPULoad" --dataMimeType "text/plain" tcp://localhost:42252
