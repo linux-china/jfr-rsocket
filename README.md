@@ -30,7 +30,7 @@ Subscribe JFR Event by RSocket.
 * Monitoring REST APIs with Custom JDK Flight Recorder Events: https://www.morling.dev/blog/rest-api-monitoring-with-custom-jdk-flight-recorder-events/
 * Continuous Monitoring with JDK Flight Recorder (JFR): https://www.infoq.com/presentations/monitoring-jdk-jfr/
 * jdk.jfr: https://docs.oracle.com/en/java/javase/13/docs/api/jdk.jfr/jdk/jfr/package-summary.html
-* Flight Recorder API Programmer’s Guide: https://docs.oracle.com/en/java/javase/14/jfapi/
+* Flight Recorder API Programmer’s Guide: https://docs.oracle.com/en/java/javase/18/jfapi/
 * Flight Recorder demo: https://github.com/flight-recorder
 * Continuous Monitoring with JDK Flight Recorder: https://www.youtube.com/watch?v=plYESjZ12hM
 * VisualVM: https://visualvm.github.io/
