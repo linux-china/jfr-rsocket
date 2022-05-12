@@ -38,4 +38,5 @@ Subscribe JFR Event by RSocket.
 * Remote Recording stream: https://egahlin.github.io/2021/05/17/remote-recording-stream.html
 * JfrUnit: extension for asserting JDK Flight Recorder events https://github.com/moditect/jfrunit
 * The JDK Flight Recorder File Format: https://www.morling.dev/blog/jdk-flight-recorder-file-format/
+* Sip of Java - JFR Event Stream: https://inside.java/2022/05/12/sip49/
 
