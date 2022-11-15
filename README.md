@@ -22,7 +22,8 @@ Subscribe JFR Event by RSocket.
 * Both are message & event driven
 
 # References
-
+                  
+* JFR Explorer: https://www.chriswhocodes.com/jfr_jdk19.html
 * Java Flight Recorder with IntelliJ IDEA: https://www.jetbrains.com/help/idea/java-flight-recorder.html
 * Getting started with JFR: https://learning.oreilly.com/library/view/java-11-and/9781789133271/e94a5985-ab79-4fb8-a530-705ca6b5126e.xhtml
 * Java Flight Recorder: https://docs.oracle.com/javacomponents/jmc-5-4/jfr-runtime-guide/about.htm
