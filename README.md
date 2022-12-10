@@ -24,6 +24,7 @@ Subscribe JFR Event by RSocket.
 # References
                   
 * JFR Explorer: https://www.chriswhocodes.com/jfr_jdk19.html
+* JFR Event Collection: https://sapmachine.io/jfrevents
 * Java Flight Recorder with IntelliJ IDEA: https://www.jetbrains.com/help/idea/java-flight-recorder.html
 * Getting started with JFR: https://learning.oreilly.com/library/view/java-11-and/9781789133271/e94a5985-ab79-4fb8-a530-705ca6b5126e.xhtml
 * Java Flight Recorder: https://docs.oracle.com/javacomponents/jmc-5-4/jfr-runtime-guide/about.htm
@@ -42,4 +43,5 @@ Subscribe JFR Event by RSocket.
 * Sip of Java - JFR Event Stream: https://inside.java/2022/05/12/sip49/
 * jfr improved ergonomics: https://egahlin.github.io/2022/05/31/improved-ergonomics.html
 * Flight Recorder Samples: https://github.com/flight-recorder/samples
+* JFR Event Collection: https://mostlynerdless.de/blog/2022/12/06/jfr-event-collection/
 
